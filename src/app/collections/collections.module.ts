@@ -6,12 +6,7 @@ import { CollectionsHomeComponent } from './collections-home/collections-home.co
 
 
 @NgModule({
-  declarations: [
-    CollectionsHomeComponent
-  ],
-  exports: [
-    CollectionsHomeComponent
-  ],
+  declarations: [CollectionsHomeComponent],
   imports: [
     CommonModule,
     CollectionsRoutingModule
