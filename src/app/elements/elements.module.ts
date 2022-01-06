@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { ElementsRoutingModule } from './elements-routing.module';
+import { SharedModule } from "../shared/shared.module";
+
 import { ElementsHomeComponent } from './elements-home/elements-home.component';
 import { PlaceholderComponent } from './placeholder/placeholder.component';
+
 import { TimesDirective } from './times.directive';
 
 
@@ -11,7 +13,8 @@ import { TimesDirective } from './times.directive';
   declarations: [ElementsHomeComponent, PlaceholderComponent, TimesDirective],
   imports: [
     CommonModule,
-    ElementsRoutingModule
+    ElementsRoutingModule,
+    SharedModule
   ]
 })
 export class ElementsModule { }
